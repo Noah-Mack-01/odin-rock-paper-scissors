@@ -33,6 +33,19 @@ let refresh = () => {
         document.getElementById("rock-button").classList.add("game-over");
         document.getElementById("paper-button").classList.add("game-over");
         document.getElementById("scissors-button").classList.add("game-over");
+
+        switch (score) {
+            case 0:
+            case 1:
+            case 2:
+                if (opp > score) update("Computer Wins!");
+                else update("Tie Game! Nobody Wins.");
+                break;
+            default:
+                update("You win!");
+                break;
+        }
+
     }
 
 }
