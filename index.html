@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="./rps.js"></script>
+        <script src="./rps.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
     </head>
+
+    <!---What do I want in this?
+        1. Score-card in the top left, right-hand side of the screen.
+    -->
+    <div>
+        <!--Current score of both player and computer-->
+        <div id="scores">
+            <div id="player-score">Your Score:<span id="pscr" class="number"></span></div>
+            <div id="counter">Rounds Left: <span id="ct" class="number"></span></div>
+            <div id="comp-score">Opposing Score:<span id="cscr" class="number"></span></div>
+        </div>
+    </div>
+
+    <div id="log"></div>
+    <div id="play-button"><button>Press to Play</button></div>
+
+
+    <div id="choices">
+        <!--Current Selection of the Player-->
+        <button id="rock-button">Rock</button>
+        <button id="paper-button">Paper</button>
+        <button id="scissors-button">Scissors</button>
+    </div>
 </html>
